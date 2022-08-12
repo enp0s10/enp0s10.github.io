@@ -4,6 +4,7 @@
    <head>
       <title>Welcome! Adrian Hernandez's Portfolio</title>
       <link rel="stylesheet" href="../css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
    </head>
 
 
@@ -11,105 +12,125 @@
       <!-- Header/Navigation Bar -->
       <header role="banner" id="top">
          <nav role="navigation">
-            <div>
+            <div class="top-navbar">
                <a href="#intro">Introduction</a>
                <a href="#edu">Education</a>
                <a href="#exp">Experience</a>
                <a href="#proj">Projects</a>
+               <a href="../html/home.html" class="active" style="float: right;">Home</a>
+               <a href="../html/demo.html" style="float: right;">Demo</a>
             </div>
          </nav>
-         <div class="hero-banner">
-            <h1>
-               <img src="../assets/images/emptyProfilePic.jpeg" alt="HTML" width="20%" class="float-left">
-               Adrian Hernandez
-            </h1>
-            <h2>
-               Graduate at California State University, Northridge
-            </h2>
-            <h2>Los Angeles, CA</h2>
+         <div class="content-wrap">
+            <img src="../assets/images/emptyProfilePic.jpeg" alt="HTML" width="20%" class="column-narrow">
+            <div class="column-wide">
+               <h1>
+                  Adrian Hernandez
+               </h1>
+               <h3>
+                  Graduate at California State University, Northridge
+               </h3>
+               <h3>Los Angeles, CA</h3>
+            </div>
          </div>
       </header>
 
       <!-- Main Section -->
       <main role="main">
          <!-- Introduction -->
-         <div id="intro" role="Introduction">
-            <h3>About Me</h3>
+         <div id="intro" role="Introduction" class="content-wrap">
+            <h2>About Me</h2>
             <p>
                &nbsp;I am a College Graduate with a Bachelor’s Degree in Computer Science from California State University, Northridge. I am well organized, outgoing, and a fast learner. Currently seeking an entry level position as a Software Engineer or Software Developer as I am eager to get started in the industry and apply the knowledge I have acquired throughout my years in college. My goal is to greater expand my knowledge of the industry and strengthen my skills as a Software Developer.
             </p>
          </div>
 
          <!-- Education -->
-         <div id="edu" role="Education">
-            <h3>Education</h3>
-            <h4>California State University, Northridge</h4>
+         <div id="edu" role="Education" class="content-wrap">
+            <h2>Education</h2>
+            <h3>California State University, Northridge</h3>
             <p>B.S. Computer Science</p>
          </div>
 
          <!-- Experience -->
-         <div id="exp" role="Experience">
-            <h3>Work Experience</h3>
+         <div id="exp" role="Experience" class="content-wrap">
+            <h2>Work Experience</h2>
             <!-- HHD-Tech -->
             <div role="Computer Technician Experience">
-               <h4>Computer Technician</h4>
-               <p><em>CSUN HHD-Tech Support - Northridge, CA</em></p>
-               <p>HHD-Tech is a sub-section of the CSUN IT Department that supports the College of Health and Human Development (“College”), which consists of 326 faculty and staff (“users”).</p>
-               <ul>
-                  <li>Troubleshooted hardware, network, and software issues for faculty and staff </li>
-                  <li>Diagnosed and resolved a range of technical issues within short time frame during professor lectures</li>
-                  <li>Provided remote support to on and off campus users with Remote Desktop Connection and Bomgar</li>
-                  <li>Configured new computers to University specifications using Microsoft Deployment Tool</li>
-                  <li>Managed the College’s hardware device inventory database using Asset Panda </li>
-                  <li>Generated and summarized inventory reports to identify hardware devices in need of replacement</li>
-                  <li>Onboard, trained, and developed new HHD-Tech computer technician members</li>
-                  <li>Maintained drivers and software for 108 computers across three HHD-Tech computer labs</li>
-                  <li>Binded computers to the CSUN Domain using CSUN’s Active Directory </li>
-                  <li>Migrated the College’s server data from a local server to Microsoft OneDrive</li>
-               </ul>
+               <div class="column-narrow">
+                  <h3>Computer Technician</h3>
+                  <p><em>CSUN HHD-Tech Support - Northridge, CA</em></p>
+               </div>
+               <div class="column-wide">
+                  <p>HHD-Tech is a sub-section of the CSUN IT Department that supports the College of Health and Human Development (“College”), which consists of 326 faculty and staff (“users”).</p>
+                  <ul>
+                     <li>Troubleshooted hardware, network, and software issues for faculty and staff </li>
+                     <li>Diagnosed and resolved a range of technical issues within short time frame during professor lectures</li>
+                     <li>Provided remote support to on and off campus users with Remote Desktop Connection and Bomgar</li>
+                     <li>Configured new computers to University specifications using Microsoft Deployment Tool</li>
+                     <li>Managed the College’s hardware device inventory database using Asset Panda </li>
+                     <li>Generated and summarized inventory reports to identify hardware devices in need of replacement</li>
+                     <li>Onboard, trained, and developed new HHD-Tech computer technician members</li>
+                     <li>Maintained drivers and software for 108 computers across three HHD-Tech computer labs</li>
+                     <li>Binded computers to the CSUN Domain using CSUN’s Active Directory </li>
+                     <li>Migrated the College’s server data from a local server to Microsoft OneDrive</li>
+                  </ul>
+               </div>
             </div>
             <!-- BGC --->
             <div role="Mathematics Tutor">
-               <h4>Mathematics Tutor</h4>
-               <p><em>Boys & Girls Club of the West Valley - Canoga Park, CA</em></p>
-               <p>BGC is a nonprofit educational organization devoted to helping kids and teens of the local community.</p>
-               <ul>
-                  <li>Clarified Algebra and geometry mathematical subjects to students struggling in school courses</li>
-                  <li>Organized college application workshops to help students navigate the application process</li>
-                  <li>Supervised the afterschool program, overseeing questions from approximately 30 students</li>
-               </ul>
+               <div class="column-narrow">
+                  <h3>Mathematics Tutor</h3>
+                  <p><em>Boys & Girls Club of the West Valley - Canoga Park, CA</em></p>
+               </div>
+               <div class="column-wide">
+                  <p>BGC is a nonprofit educational organization devoted to helping kids and teens of the local community.</p>
+                  <ul>
+                     <li>Clarified Algebra and geometry mathematical subjects to students struggling in school courses</li>
+                     <li>Organized college application workshops to help students navigate the application process</li>
+                     <li>Supervised the afterschool program, overseeing questions from approximately 30 students</li>
+                  </ul>
+               </div>
             </div>
          </div>
 
          <!-- Projects -->
-         <div id="proj" role="Projects">
+         <div id="proj" role="Projects" class="content-wrap">
             <h3>Projects</h3>
             <!-- TastEZ -->
             <div role="TastEZ">
-               <h4 class="">TastEZ</h4> <p class="">| <a href="https://github.com/GreenNovaStar/TastEZ">https://github.com/GreenNovaStar/TastEZ</a></p>
-               <p>
-                  A mobile recipe application that incorporates wine pairing to elevate the user’s cooking experience.
-               </p>
-               <p><em>Language: Dart</em></p>
-               <ul>
-                  <li>Prepared project GUI outlines/storyboard for the application pages</li>
-                  <li>Contributed to the development of the recipe page</li>
-                  <li>Created user friendly tutorials to assist in navigating and understanding application functionality</li>
-                  <li>Assisted in developing the recipe search functionality and filter options</li>
-                  <li>Retrieved user search results via API calls using a recipe API, Spoonacular</li>
-               </ul>
+               <div class="column-narrow">
+                  <h4 class="">TastEZ</h4> <p class="">| <a href="https://github.com/GreenNovaStar/TastEZ">https://github.com/GreenNovaStar/TastEZ</a></p>
+               </div>
+               <div class="column-wide">
+                  <p>
+                     A mobile recipe application that incorporates wine pairing to elevate the user’s cooking experience.
+                  </p>
+                  <p><em>Language: Dart</em></p>
+                  <ul>
+                     <li>Prepared project GUI outlines/storyboard for the application pages</li>
+                     <li>Contributed to the development of the recipe page</li>
+                     <li>Created user friendly tutorials to assist in navigating and understanding application functionality</li>
+                     <li>Assisted in developing the recipe search functionality and filter options</li>
+                     <li>Retrieved user search results via API calls using a recipe API, Spoonacular</li>
+                  </ul>
+               </div>
             </div>
             <!-- Illud -->
             <div role="Illud">
-               <h4 class="">Illud</h4> <p class="f">| <a href="https://github.com/Inviro/Illud">https://github.com/Inviro/Illud</a></p>
-               <p>
-                  A Java based text Windows Text Editor, which contained standard text editing functionality.
-               </p>
-               <p><em>Language: Java</em></p>
-               <ul>
-                  <li>Created the GUI for the Dictionary Definitions portion of the project</li>
-                  <li>Utilized a free public dictionary API to retrieve definitions for user highlighted words</li>
-               </ul>
+               <div class="column-narrow">
+                  <h4 class="">Illud</h4> <p class="f">| <a href="https://github.com/Inviro/Illud">https://github.com/Inviro/Illud</a></p>
+               </div>
+               <div class="column-wide">
+                  <p>
+                     A Java based text Windows Text Editor, which contained standard text editing functionality.
+                  </p>
+                  <p><em>Language: Java</em></p>
+                  <ul>
+                     <li>Created the GUI for the Dictionary Definitions portion of the project</li>
+                     <li>Utilized a free public dictionary API to retrieve definitions for user highlighted words</li>
+                  </ul>
+               </div>
             </div>
          </div>
       </main>
