@@ -1,3 +1,13 @@
+/*----- Universal Colors -----*/
+:root{
+  --color1: #5C6373;
+  --color2: #4590BF;
+  --color3: #C2E0F2;
+  --color4: #499EBF;
+  --color5: #41591C;
+}
+
+
 /*----- Structure Related css -----*/
 html {
 	box-sizing:  border-box;
@@ -7,25 +17,23 @@ html {
 }
 
 body, html {
-	size: 100%;
-	background: #BABABA;
+	/*size: 100%;*/
+	background: var(--color2);
 	margin: 0;
 }
 header {
 	margin: 0;
 }
+nav {
+	box-shadow: 0px 0px 15px var(--color5);
+}
 body {
 	font-family: Helvetica, Geneva, sans-serif;
 	line-height: 1.8;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0;
 }
 main {
-	/*padding: 2.5% 2.5%;
-	background-color: #EAEAEA;*/
-	margin-left: auto;
-	margin-right: auto;
-
+	
 }
 
 /*----- Alignment Tools -----*/
@@ -80,10 +88,12 @@ p {
 /*------ Header -----*/
 /* Navigation Bar */
 .top-navbar {
-	background-color: #333;
+	background-color: var(--color1);
 	overflow:  hidden;
 	font-family: 'Roboto Condensed', sans-serif;
-	position: sticky;
+	position: fixed;
+	padding: 0px;
+	width: 100%;
 }
 
 .top-navbar a {
@@ -96,17 +106,52 @@ p {
 }
 
 .top-navbar a:hover {
-	background-color: #ddd;
+	background-color: var(--color3);
 	color: black;
 }
 
 .top-navbar a.active {
-	background-color: #2C7926;
+	background-color: var(--color5);
 	color: white;
 }
+
+.profile-img {
+    border-radius: 50%;
+}
+
+header h1 {
+	margin: 0;
+}
+
+header h2 {
+	font-size: 28px;
+	margin: 0;
+}
+
+header h3 {
+	margin: 0;
+	font-size: 25px;
+}
+
 
 /*----- Footer -----*/
 footer {
 	text-align: center;
+	background-color: var(--color2);
+}
+
+
+/*----- Main -----*/
+.aboutMe {
+	background-color: var(--color1);
+}
+.edu {
+	background-color: var(--color3);
+}
+.workExp {
+	background-color: var(--color4);
+}
+.projects {
+	background-color: var(--color3);
 }
 
