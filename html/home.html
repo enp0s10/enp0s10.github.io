@@ -2,10 +2,15 @@
 <html>
 
    <head>
-      <title>Welcome! Adrian Hernandez's Portfolio</title>
+      <title>Adrian Hernandez | Resume</title>
+      <!-- stylesheets -->
       <link rel="stylesheet" href="../css/style.css">
+      <!-- external fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+      <!-- external icons -->
+      <script src="https://kit.fontawesome.com/3c02261948.js" crossorigin="anonymous"></script>
+      <link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/blue-whale-collar/my-resume.png" type="image/x-icon">
    </head>
 
 
@@ -14,15 +19,16 @@
       <header role="banner" id="top">
          <nav role="navigation">
             <div class="top-navbar">
-               <a href="#intro">Introduction</a>
                <a href="#edu">Education</a>
                <a href="#exp">Experience</a>
                <a href="#proj">Projects</a>
+               <a href="#contactMe">Contact</a>
+               <a href="../assets/files/AdrianHernandez-Resume.pdf" target="_blank">Download Resume</a>
                <a href="../html/home.html" class="active" style="float: right;">Home</a>
                <a href="../html/demo.html" style="float: right;">Demo</a>
             </div>
          </nav>
-         <div class="content-wrap" style="padding-top: 80px">
+         <div class="content-wrap" style="padding-top: 85px">
             <img src="../assets/images/AdrianHernandez.jpg" alt="HTML" class="profile-img column-narrow">
             <div class="column-wide">
                <h1>
@@ -31,7 +37,7 @@
                <h2>
                   Graduate at California State University, Northridge
                </h2>
-               <h3>Los Angeles, CA</h3>
+               <h3><em>Los Angeles, CA</em></h3>
             </div>
             <p>
                &nbsp;I am a College Graduate with a Bachelor’s Degree in Computer Science from California State University, Northridge. I am well organized, outgoing, and a fast learner. Currently seeking an entry level position as a Software Engineer or Software Developer as I am eager to get started in the industry and apply the knowledge I have acquired throughout my years in college. My goal is to greater expand my knowledge of the industry and strengthen my skills as a Software Developer.
@@ -41,26 +47,14 @@
 
       <!-- Main Section -->
       <main role="main">
-         <!-- Introduction -->
-         <!-- <section>
-            <div class="aboutMe">
-               <div id="intro" role="Introduction" class="content-wrap">
-                  <h2>About Me</h2>
-                  <p>
-                     &nbsp;I am a College Graduate with a Bachelor’s Degree in Computer Science from California State University, Northridge. I am well organized, outgoing, and a fast learner. Currently seeking an entry level position as a Software Engineer or Software Developer as I am eager to get started in the industry and apply the knowledge I have acquired throughout my years in college. My goal is to greater expand my knowledge of the industry and strengthen my skills as a Software Developer.
-                  </p>
-               </div>
-            </div>
-         </section> -->
-
          <!-- Education -->
          <div class="edu">
             <section>
                <div id="edu" role="Education" class="content-wrap">
                   <h2>Education</h2>
-                  <img src="../assets/images/CSUNS.svg.png" width="50px" class="float-left">
+                  <img src="../assets/images/CSUNS.svg.png" width="110px" class="float-left">
                   <h3 style="margin-bottom: 0;">&nbsp California State University, Northridge</h3>
-                  <p class="float-left">Bachelor of Science - Computer Science</p>
+                  <p class="float-left">&nbsp Bachelor of Science - Computer Science</p>
                   <p class="float-right"><em>May 2022</em></p>
                </div>
             </section>
@@ -76,6 +70,7 @@
                      <div class="column-narrow">
                         <h3>Computer Technician</h3>
                         <p><em>CSUN HHD-Tech Support - Northridge, CA</em></p>
+                        <p> June 2018 - May 2022</p>
                      </div>
                      <div class="column-wide">
                         <p>HHD-Tech is a sub-section of the CSUN IT Department that supports the College of Health and Human Development (“College”), which consists of 326 faculty and staff (“users”).</p>
@@ -100,6 +95,7 @@
                      <div class="column-narrow">
                         <h3>Mathematics Tutor</h3>
                         <p><em>Boys & Girls Club of the West Valley - Canoga Park, CA</em></p>
+                        <p>January 2018 - June 2018</p>
                      </div>
                      <div class="column-wide">
                         <p>BGC is a nonprofit educational organization devoted to helping kids and teens of the local community.</p>
@@ -117,12 +113,12 @@
          <!-- Projects -->
          <div class="projects">
             <div id="proj" role="Projects" class="content-wrap">
-               <h3>Projects</h3>
+               <h2>Projects</h2>
                <!-- TastEZ -->
                <section>
                   <div role="TastEZ">
                      <div class="column-narrow">
-                        <h4 class="">TastEZ</h4> <p class="">| <a href="https://github.com/GreenNovaStar/TastEZ">https://github.com/GreenNovaStar/TastEZ</a></p>
+                        <h3 class="">TastEZ</h3> <p class="">| <a href="https://github.com/GreenNovaStar/TastEZ">https://github.com/GreenNovaStar/TastEZ</a></p>
                      </div>
                      <div class="column-wide">
                         <p>
@@ -143,7 +139,7 @@
                <section>
                   <div role="Illud">
                      <div class="column-narrow">
-                        <h4 class="">Illud</h4> <p class="f">| <a href="https://github.com/Inviro/Illud">https://github.com/Inviro/Illud</a></p>
+                        <h3 class="">Illud</h3> <p class="f">| <a href="https://github.com/Inviro/Illud">https://github.com/Inviro/Illud</a></p>
                      </div>
                      <div class="column-wide">
                         <p>
@@ -162,11 +158,22 @@
       </main>
 
       <!-- Footer-->
-      <footer role="contentInfo">
-         <p>
-            <a href="#top"><img src="../assets/images/upArrow.png" alt="HTML" width="40" length="40" class="float-right"></a>
-            <br>This page was created by Adrian Hernandez
-         </p>
+      <footer role="contentInfo" id="contactMe">
+         <div class="contact-info">
+            <h2>Contact Information</h2>
+            <!-- contact info -->
+            <a href="mailto:adrian.hernandz.0@gmail.com"><i class="far fa-envelope"></i>adrian.hernandz.0@gmail.com</a> |
+            <a href="https://adrian-hernandez-resume-hw8.glitch.me/" target="_blank"><i class="fas fa-code"></i>Website</a> |
+            <a href="https://www.linkedin.com/in/adrian-hernandez-bba5621b7/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
+            <a href="https://github.com/enp0s10" target="_blank"><i class="fa-brands fa-square-github"></i>enp0s10</a>
+            
+            <!-- standard footer stuff -->
+            <p>
+               <a href="#top"><img src="../assets/images/upArrow.png" alt="HTML" width="40" length="40" class="float-right"></a>
+               <br>This page was created by Adrian Hernandez
+            </p>
+         </a>
       </footer>
    </body>
+
 </html>

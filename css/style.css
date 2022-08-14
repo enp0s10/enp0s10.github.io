@@ -30,11 +30,10 @@ nav {
 }
 body {
 	font-family: Helvetica, Geneva, sans-serif;
-	line-height: 1.8;
 	margin: 0;
 }
 main {
-	
+	line-height: 1.67;
 }
 
 /*----- Alignment Tools -----*/
@@ -86,6 +85,10 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+.content-spacing {
+	line-height: 1.67;
+}
+
 /*------ Header -----*/
 /* Navigation Bar */
 .top-navbar {
@@ -121,12 +124,12 @@ p {
 }
 
 header h1 {
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 
 header h2 {
 	font-size: 28px;
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 
 header h3 {
@@ -137,8 +140,24 @@ header h3 {
 
 /*----- Footer -----*/
 footer {
+	margin-top: 20px;
 	text-align: center;
 	background-color: var(--color1);
+	color: white;
+}
+
+.contact-info a{
+	padding: 10px;
+	display: inline-block;
+	color: white;
+}
+
+.contact-info a:hover {
+	color: var(--color4);
+}
+
+.contact-info a i {
+    padding-right: 5px;
 }
 
 
