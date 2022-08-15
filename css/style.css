@@ -1,3 +1,42 @@
+/*----- Universal Colors -----*/
+:root{
+  --color1: #5C6373;
+  --color2: #4590BF;
+  --color3: #C2E0F2;
+  --color4: #499EBF;
+  --color5: #41591C;
+}
+
+
+/*----- Structure Related css -----*/
+html {
+	box-sizing:  border-box;
+}
+*,*:before,*:after {
+	box-sizing: inherit;
+}
+
+body, html {
+	/*size: 100%;*/
+	background: var(--color1);
+	margin: 0;
+}
+header {
+	margin: 0;
+	color: white;
+}
+nav {
+	box-shadow: 0px 0px 15px var(--color5);
+}
+body {
+	font-family: Helvetica, Geneva, sans-serif;
+	margin: 0;
+}
+main {
+	line-height: 1.67;
+}
+
+/*----- Alignment Tools -----*/
 .float-left {
 	float: left;
 }
@@ -5,3 +44,134 @@
 .float-right {
 	float: right;
 }
+
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+}
+
+.column-narrow {
+	width: 30%;
+	float: left;
+	padding-right: 3%;
+	min-height: 175px
+}
+
+.column-wide {
+	width: 70%;
+	float: left;
+	min-height: 225px;
+}
+
+/*----- Font Stuff-----*/
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 70px;
+}
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-spacing {
+	line-height: 1.67;
+}
+
+/*------ Header -----*/
+/* Navigation Bar */
+.top-navbar {
+	background-color: var(--color2);
+	overflow:  hidden;
+	font-family: 'Roboto Condensed', sans-serif;
+	position: fixed;
+	padding: 0px;
+	width: 100%;
+}
+
+.top-navbar a {
+	float:  left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.top-navbar a:hover {
+	background-color: var(--color3);
+	color: black;
+}
+
+.top-navbar a.active {
+	background-color: var(--color1);
+	color: white;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+header h1 {
+	margin: 0 0 10px 0;
+}
+
+header h2 {
+	font-size: 28px;
+	margin: 0 0 10px 0;
+}
+
+header h3 {
+	margin: 0;
+	font-size: 25px;
+}
+
+
+/*----- Footer -----*/
+footer {
+	margin-top: 20px;
+	text-align: center;
+	background-color: var(--color1);
+	color: white;
+}
+
+.contact-info a{
+	padding: 10px;
+	display: inline-block;
+	color: white;
+}
+
+.contact-info a:hover {
+	color: var(--color4);
+}
+
+.contact-info a i {
+    padding-right: 5px;
+}
+
+
+/*----- Main -----*/
+.aboutMe {
+	background-color: var(--color1);
+}
+.edu {
+	background-color: var(--color3);
+}
+.workExp {
+	background-color: var(--color4);
+}
+.projects {
+	background-color: var(--color3);
+}
+
