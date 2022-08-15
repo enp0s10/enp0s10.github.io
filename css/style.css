@@ -137,6 +137,10 @@ header h3 {
 	font-size: 25px;
 }
 
+header a i {
+	padding-right: 5px;
+}
+
 
 /*----- Footer -----*/
 footer {
@@ -174,4 +178,9 @@ footer {
 .projects {
 	background-color: var(--color3);
 }
-
+.projects a {
+	padding: 10px;
+}
+.projects a i {
+    padding-right: 5px;
+}
