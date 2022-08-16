@@ -166,15 +166,27 @@ footer {
 
 
 /*----- Main -----*/
-.aboutMe {
-	background-color: var(--color1);
-}
 .edu {
 	background-color: var(--color3);
 }
+.related-courses {
+	padding-top: 0;
+
+}
+.related-courses table {
+	width: 100%;
+}
+.related-courses td {
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	padding-bottom: 8px;
+	padding-right: 8px;
+}
+
 .workExp {
 	background-color: var(--color4);
 }
+
 .projects {
 	background-color: var(--color3);
 }
