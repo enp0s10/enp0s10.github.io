@@ -2,23 +2,48 @@
 
 <head>
 	<title>Website Demo</title>
+	<!-- Style Sheets -->
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/demoStyle.css">
+	<!-- External Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+   <!-- External Icons -->
+   <script src="https://kit.fontawesome.com/3c02261948.js" crossorigin="anonymous"></script>
+   <link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/blue-whale-collar/my-resume.png" type="image/x-icon">
+   <!-- Javascript Imports -->
+   <!-- <script type="text/javascript" src="../javascript/script.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 </head>
 
 <body>
+	<!-- Header -->
 	<header>
 		<nav role="navigation">
-            <div class="top-navbar">
-               <a href="../html/home.html" style="float: right;">Home</a>
-               <a href="../html/demo.html" class="active" style="float: right;">Demo</a>
-            </div>
-         </nav>
+	      <div class="top-navbar">
+	      	<a href="../html/demo.html">HTML</a>
+	         <a href="../html/home.html" style="float: right;">Home</a>
+	         <a href="../html/demo.html" class="active" style="float: right;">Demo</a>
+	      </div>
+      </nav>
+      <div class="content-wrap" style="padding-top: 80px">
+	      <h1>Demo Page</h1>
+	      <p>&nbsp; Here I will display a few working demos that will demonstrate my skills my skills as a developer.</p>
+	   </div>
 	</header>
+
+	<!-- Main -->
 	<main style="padding-top: 55px">
-		<h1>Site Under Construction :)</h1>
-		<img src="../assets/images/underWork.png" width="500" alt="HTML" style="vertical-align: middle; margin: 2.5%;">
+		<div class="external-chart">
+			<div class="content-wrap">
+				<section>
+					<h2>External APIs & Libraries</h2>
+					<p>In this section I will be working with an external API to gather my data. And graph it using Chart.js.</p>
+					<canvas id="chart" class="chart"></canvas>
+					<script type="text/javascript" src="../javascript/script.js"></script>
+				</section>
+			</div>
+		</div>
 	</main>
 </body>
 

@@ -1,0 +1,17 @@
+/*----- Universal Colors -----*/
+:root{
+  --color1: #5C6373;
+  --color2: #4590BF;
+  --color3: #C2E0F2;
+  --color4: #499EBF;
+  --color5: #41591C;
+}
+
+/*----- Chart -----*/
+.external-chart {
+	background-color: var(--color3);
+}
+.chart {
+	width: 400;
+	height: 400;
+}
