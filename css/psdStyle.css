@@ -1,0 +1,137 @@
+/* ----- Universal CSS ----- */
+body {
+	margin: 0;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	margin: 0, auto;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+
+}
+
+/* ----- Header ----- */
+.hero-banner {
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.inner-hero {
+	position: absolute;
+	width: 100%;
+}
+
+.logo-left {
+	margin-left: 320px;
+	float: left;
+	padding-top: 8px;
+}
+.nav-right {
+	padding-top: 26px;
+	margin-right: 320px;
+	float: right;
+}
+
+.nav-right a {
+	padding-left: 50px;
+	color: #fefeff;
+}
+
+/* ----- sticky-banner -----*/
+.sticky-nav {
+	/*width: 1600px;*/
+	height: 64px;
+	position: sticky;
+	background-color: #ffffff;
+}
+
+.sticky-logo-left {
+	margin-left: 320px;
+	float: left;
+	padding-top: 8px;
+}
+
+.sticky-nav-right {
+	padding-top: 26px;
+	margin-right: 320px;
+	float: right;
+}
+.sticky-nav-right a {
+	padding-left: 50px;
+	color: #414f6b;
+}
+
+
+/* ----- History ----- */
+.history {
+	/*width: 1600px;*/
+	/*padding-top: 64px;*/
+}
+
+.history-background {
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.inner-history {
+	position: absolute;
+	/*width: 1600px;*/
+}
+.number1 {
+	margin-left: 320px;
+	float: left;
+	padding-top: 62px;
+}
+.history-text {
+	float: left;
+	padding-left: 393px;
+	padding-right: 393px;
+	text-align: left;
+	position: center;
+	font-size: 16pt;
+	color: #000000;
+}
+
+/* ----- Team ----- */
+
+.team {
+	/*width: 1600px;*/
+}
+
+.team-background {
+	background-position: center;
+	background-size: 100%;
+	position: relative;
+}
+
+.team2 {
+	margin-left: 320px;
+	float: left;
+	padding-top: 62px;
+}
+.team-summary {
+	float: left;
+	padding-right: 393px;
+	text-align: left;
+	font-size: 16pt;
+	color: #000000;	
+}
+
+.tabs {
+	/*background-color: #414f6b;*/
+}
+
+.tab-link {
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>PSD to HTML</title>
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="../css/psdStyle.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- External Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+	<!-- JavaScript Imports -->
+	<script type="text/javascript" src="../javascript/psdScript.js"></script>
+</head>
+
+
+<body>
+	
+
+<!-- Header -->
+	<header>
+		<nav role="navigation">
+	      <div class="top-navbar">
+	      	 <a href="../html/psdToHTML.html" class="active">PSD to HTML</a>
+	      	 <a href="../assets/files/psdSample.psd">PSD File</a>
+	         <a href="../html/home.html" style="float: right;">Home</a>
+	         <a href="../html/demo.html" class="active" style="float: right;">Demo</a>
+	      </div>
+      	</nav>	
+		<div id="header" role="header" style="padding-top: 53px">
+			<div class="hero-banner container">
+				<div class="inner-hero"> 
+					<div class="logo-left">
+						<a href="index.html"><img src="../assets/PSDtoHTML/logo.png"></a>
+					</div>
+					<div class="nav-right float-right">
+						<nav role="Navigation">
+							<a href="#history">1. HISTORY</a>
+							<a href="#team"> 2. TEAM</a>
+						</nav>
+					</div>
+				</div>
+
+				<img src="../assets/PSDtoHTML/hero-image.png">
+				
+			</div>
+		</div>
+
+		<div id="sticky-nav" class="sticky-nav">
+			<div class="sticky-logo-left">
+				<img src="../assets/PSDtoHTML/logo-2.png">
+			</div>
+			<div class="sticky-nav-right">
+				<a href="#history" style="color: #414f6b;">1. HISTORY</a>
+				<a href="#team" style="color: #414f6b;"> 2. TEAM</a>
+			</div>
+		</div>
+
+	</header>
+
+	<main role="article" style="background-color:#ffffff">
+		<!-- ----- History ----- -->
+		<section>
+			<div role="History" id="history" class="history container">
+				<div class="history-background">
+
+					<div class="inner-history">
+						<div class="number1">
+							<img src="../assets/PSDtoHTML/1-history.png">
+						</div>
+						<div class="history-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p> 
+						</div>
+					</div>
+
+					<img src="../assets/PSDtoHTML/history-image.png">
+				</div>
+				<div class="history-background">
+					<img src="../assets/PSDtoHTML/history-image-2.png">
+				</div>
+			</div>
+		</section>
+
+		<!-- ----- Teams ----- -->
+		<section>
+			<div class="	" id="team">
+				<!-- Summary -->
+				<div>
+					<div class="team2">
+						<img src="../assets/PSDtoHTML/2-climb.png">
+						<div class="team-summary">
+							<p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+						</div>
+					</div>
+				</div>
+				<!-- Tabs -->
+				<div class="tabs">
+					<button class="tab-link" id="mnt1" onclick="changeMnt(event, 'mountain-1', mnt1)">Mountain 1</button>
+					<button class="tab-link" id="mnt2" onclick="changeMnt(event, 'mountain-2', mnt2)">Mountain 2</button>
+				</div>
+				<!-- Background -->
+				<div id="mountain-1" class="tab-content team-background">
+					<img src="../assets/PSDtoHTML/team-tab-1.png">
+				</div>
+				<div id="mountain-2" class="tab-content team-background" style="display: none;">
+					<img src="../assets/PSDtoHTML/team-tab-2.png">
+				</div>
+				<div class="team-background">
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo-left">
+				<img src="../assets/PSDtoHTML/logo-3.png">
+			</div>
+			<div class="copyright">
+				<p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
