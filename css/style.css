@@ -233,3 +233,16 @@ footer {
 .projects a i {
     padding-right: 5px;
 }
+
+
+/*-- Animation Related CSS --*/
+/*-- Fade In Content --*/
+.fade-in {
+  opacity:  0;
+  transition:  opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+	opacity:  1;
+}
+
