@@ -1,9 +1,11 @@
-const faders = document.querySelectorAll('.fade-in');
 
+// Content Fade In
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
 
 const appearOptions = {
-	threshold: .75,
-	rootMargin: "0px 0px 0px 0px"
+	threshold: 0,
+	rootMargin: "0px 0px -200px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver
@@ -24,3 +26,8 @@ const appearOnScroll = new IntersectionObserver
 faders.forEach(fader => {
 	appearOnScroll.observe(fader);
 });
+sliders.forEach(slider => {
+	appearOnScroll.observe(slider);
+});
+
+

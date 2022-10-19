@@ -31,6 +31,7 @@ nav {
 body {
 	font-family: Helvetica, Geneva, sans-serif;
 	margin: 0;
+	overflow-x: hidden;
 }
 main {
 	line-height: 1.67;
@@ -57,12 +58,14 @@ main {
 	float: left;
 	padding-right: 3%;
 	min-height: 175px
+	transform: transalteX(-50%);
 }
 
 .column-wide {
 	width: 70%;
 	float: left;
 	min-height: 225px;
+	transform: translateX(50%);
 }
 
 /*----- Font Stuff-----*/
@@ -146,6 +149,19 @@ header h3 {
 
 header a i {
 	padding-right: 5px;
+}
+
+.image-left {
+	width: 30%;
+	float: left;
+	padding-right: 3%;
+	min-height: 175px
+}
+
+.title-right {
+	width: 70%;
+	float: left;
+	min-height: 225px;
 }
 
 
@@ -245,4 +261,18 @@ footer {
 .fade-in.appear {
 	opacity:  1;
 }
+
+/*-- Slide In Content --*/
+.from-left,
+.from-right {
+	transition: opacity 250ms ease-in, transform 400ms ease-in;
+	opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+	transform: translateX(0);
+	opacity: 1;
+}
+
 
