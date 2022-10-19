@@ -31,6 +31,7 @@ nav {
 body {
 	font-family: Helvetica, Geneva, sans-serif;
 	margin: 0;
+	overflow-x: hidden;
 }
 main {
 	line-height: 1.67;
@@ -57,12 +58,14 @@ main {
 	float: left;
 	padding-right: 3%;
 	min-height: 175px
+	transform: transalteX(-50%);
 }
 
 .column-wide {
 	width: 70%;
 	float: left;
 	min-height: 225px;
+	transform: translateX(50%);
 }
 
 /*----- Font Stuff-----*/
@@ -99,19 +102,22 @@ p {
 /*------ Header -----*/
 /* Navigation Bar */
 .top-navbar {
-	background-color: var(--color2);
+	/*background-color: var(--color2);*/
 	overflow:  hidden;
 	font-family: 'Roboto Condensed', sans-serif;
 	position: fixed;
 	padding: 0px;
 	width: 100%;
+	box-shadow: 0px 3px 2px slategrey;
+	z-index: 2;
+	transition: background 250ms ease-in;
 }
 
 .top-navbar a {
 	float:  left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 16px 16px;
+	padding: 25px 16px;
 	text-decoration: none;
 	font-size: 17px;
 }
@@ -124,6 +130,11 @@ p {
 .top-navbar a.active {
 	background-color: var(--color1);
 	color: white;
+}
+
+.nav-scrolled {
+	background: var(--color2);
+	box-shadow: 0px 3px 3px #4DA2D6;
 }
 
 .profile-img {
@@ -146,6 +157,23 @@ header h3 {
 
 header a i {
 	padding-right: 5px;
+}
+
+.intro {
+
+}
+
+.image-left {
+	width: 30%;
+	float: left;
+	padding-right: 3%;
+	min-height: 175px
+}
+
+.title-right {
+	width: 70%;
+	float: left;
+	min-height: 225px;
 }
 
 
@@ -233,3 +261,30 @@ footer {
 .projects a i {
     padding-right: 5px;
 }
+
+
+/*-- Animation Related CSS --*/
+/*-- Fade In Content --*/
+.fade-in {
+  opacity:  0;
+  transition:  opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+	opacity:  1;
+}
+
+/*-- Slide In Content --*/
+.from-left,
+.from-right {
+	transition: opacity 250ms ease-in, transform 400ms ease-in;
+	opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+
