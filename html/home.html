@@ -16,337 +16,352 @@
 
 
    <body>
-      <!-- Header/Navigation Bar -->
-      <header role="banner" id="top">
-         <nav role="navigation">
-            <div class="top-navbar" id="nav-bar">
-               <a href="#skills">Skills</a>
-               <a href="#edu">Education</a>
-               <a href="#exp">Experience</a>
-               <a href="#proj">Projects</a>
-               <a href="#contactMe">Contact</a>
-               <a href="../assets/files/AdrianHernandez-Resume.pdf" target="_blank"><i class="fa-solid fa-download"></i>Download Resume</a>
-               <a href="../html/home.html" class="active" style="float: right;">Home</a>
-               <!-- <a href="../html/demo.html" style="float: right;">Demo</a> -->
-            </div>
-         </nav>
-         <div class="intro content-wrap" style="padding-top: 85px">
-            <img src="../assets/images/AdrianHernandez.jpg" alt="HTML" class="profile-img image-left">
-            <div class="title-right">
-               <h1>
-                  Adrian Hernandez
-               </h1>
-               <h2>
-                  Graduate at California State University, Northridge
-               </h2>
-               <h3><em>Los Angeles, CA</em></h3>
-            </div>
-            <p>
-               &nbsp;I am a College Graduate with a Bachelor’s Degree in Computer Science from California State University, Northridge. I am well organized, outgoing, and a fast learner. Currently seeking an entry level position as a Software Engineer or Software Developer as I am eager to get started in the industry and apply the knowledge I have acquired throughout my years in college. My goal is to greater expand my knowledge of the industry and strengthen my skills as a Software Developer.
-            </p>
-            <!-- contact info -->
-            <div class="contact-info">
-               <a href="mailto:adrian.hernandz.0@gmail.com"><i class="far fa-envelope"></i>adrian.hernandz.0@gmail.com</a> |
-               <a href="https://enp0s10.github.io/html/home.html" target="_blank"><i class="fas fa-code"></i>Website</a> |
-               <a href="https://www.linkedin.com/in/adrian-hernandez-bba5621b7/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
-               <a href="https://github.com/enp0s10" target="_blank"><i class="fa-brands fa-square-github"></i>enp0s10</a>
-            </div>
-         </div>
-      </header>
+      <!-- Sliding Side Bar -->
+      <div id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../html/home.html">Home</a>
+        <a href="../html/demo.html">Demo</a>
+        <a href="../assets/files/AdrianHernandez-Resume.pdf">Resume</a>
+        <a href="https://github.com/enp0s10/enp0s10.github.io">GitHub Repository</a>
+      </div>
 
-      <!-- Main Section -->
-      <main role="main">
-         <!-- Skills -->
-         <div class="skills" id="skills">
-            <section>
-               <div class="content-wrap">
-                  <h2 class="fade-in">Technical Skills</h2>
-                  <!-- Programming Languages -->
-                  <div class="fade-in">
-                     <h3>Programming Languages</h3>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star-half-stroke"></i>
-                     <table>
-                        <tr>
-                           <td>
-                              <h4>Java</h4>
-                              <p>4 years | Apache Maven</p>
-                              <!-- <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star"></i>
-                              <i class="fa-solid fa-star-half-stroke"></i> -->
-                           </td>
-                           <td>
-                              <h4>Swift</h4>
-                              <p>1 year | Xcode | Storyboards</p>
-                           <td>
-                              <h4>Bash</h4>
-                              <p>1 year | Linux</p>
-                           </td>
-                           <td>
-                              <h4>Dart</h4>
-                              <p>1 year | Flutter</p>
-                           </td>
-                        </tr>
-                     </table>
-                  </div>
-                  <!-- Web Development -->
-                  <div class="fade-in">
-                     <h3>Web Development</h3>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star-half-stroke"></i>
-                     <table>
-                        <tr>
-                           <td>
-                              <h4>HTML</h4>
-                              <p>1 year | BootStrap </p>
-                           </td>
-                           <td>
-                              <h4>CSS</h4>
-                              <p>1 year</p>
-                           <td>
-                              <h4>JavaScript</h4>
-                              <p>1 year | Phaser.js</p>
-                           </td>
-                           <td>
-                              <h4>PSD</h4>
-                           </td>
-                        </tr>
-                     </table>
-                  </div>
-                  <!-- Other -->
-                  <div class="fade-in">
-                     <h3>Other</h3>
-                     <table>
-                        <tr>
-                           <td>Amazon Web Services (AWS)</td>
-                           <td>JSON API</td>
-                           <td>MySQL</td>
-                           <td>LAMP Stack</td>
-                        </tr>
-                     </table>
-                  </div>
+      <!-- Visible Page Content -->
+      <div id="page-content" class="page-content">
+         <!-- Header/Navigation Bar -->
+         <header role="banner" id="top">
+            <nav role="navigation">
+               <div class="top-navbar" id="nav-bar">
+                  <!-- Side Bar -->
+                  <a onclick="openNav()" class="open-nav" id="open-nav"><i class="fa-solid fa-bars"></i></a>
+                  <a href="#skills">Skills</a>
+                  <a href="#edu">Education</a>
+                  <a href="#exp">Experience</a>
+                  <a href="#proj">Projects</a>
+                  <a href="#contactMe">Contact</a>
+                  <a href="../assets/files/AdrianHernandez-Resume.pdf" target="_blank"><i class="fa-solid fa-download"></i>Download Resume</a>
+                  <!-- <a href="../html/home.html" class="active" style="float: right;">Home</a>
+                  <a href="../html/demo.html" style="float: right;">Demo</a> -->
                </div>
-            </section>
-         </div>
+            </nav>
+            <div class="intro content-wrap" style="padding-top: 85px">
+               <img src="../assets/images/AdrianHernandez.jpg" alt="HTML" class="profile-img image-left">
+               <div class="title-right">
+                  <h1>
+                     Adrian Hernandez
+                  </h1>
+                  <h2>
+                     Graduate at California State University, Northridge
+                  </h2>
+                  <h3><em>Los Angeles, CA</em></h3>
+               </div>
+               <p>
+                  &nbsp;I am a College Graduate with a Bachelor’s Degree in Computer Science from California State University, Northridge. I am well organized, outgoing, and a fast learner. Currently seeking an entry level position as a Software Engineer or Software Developer as I am eager to get started in the industry and apply the knowledge I have acquired throughout my years in college. My goal is to greater expand my knowledge of the industry and strengthen my skills as a Software Developer.
+               </p>
+               <!-- contact info -->
+               <div class="contact-info">
+                  <a href="mailto:adrian.hernandz.0@gmail.com"><i class="far fa-envelope"></i>adrian.hernandz.0@gmail.com</a> |
+                  <a href="https://enp0s10.github.io/html/home.html" target="_blank"><i class="fas fa-code"></i>Website</a> |
+                  <a href="https://www.linkedin.com/in/hdz-adrian/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
+                  <a href="https://github.com/enp0s10" target="_blank"><i class="fa-brands fa-square-github"></i>enp0s10</a>
+               </div>
+            </div>
+         </header>
 
-         <!-- Education -->
-         <div class="edu">
-            <section>
-               <div id="edu" role="Education" class="content-wrap" style="padding-bottom: 0px;">
-                  <h2 class="fade-in">Education</h2>
-                  <div class="fade-in">
-                     <img src="../assets/images/CSUNS.svg.png" width="110px" class="float-left">
-                     <h3 style="margin-bottom: 0;">&nbsp California State University, Northridge</h3>
-                     <p class="float-left" style="padding-left: 7px;">&nbsp Bachelor of Science - Computer Science</p>
-                     <p class="float-right"><em>May 2022</em></p>
-                  </div>
-               </div>
-            </section>
-            <section>
-               <!-- Related Courses -->
-               <div class="content-wrap related-courses">
-                  <h3 class="fade-in">Related Courses</h3>
-                  <div class="fade-in">
-                     <table>
-                        <tr>
-                           <td>Algorithm Design and Analysis</td>
-                           <td>Swift 5: Protocol Oriented Programming</td>
-                           <td>Swift: Delegations and Data Sources</td>
-                        </tr>
-                        <tr>
-                           <td>Languages and Computation</td>
-                           <td>Programming Language Concepts</td>
-                           <td>Senior Design</td>
-                        </tr>
-                        <tr>
-                           <td>Computer System Security</td>
-                           <td>Data Structures and Program Design</td>
-                           <td>Network Infrastructure</td>
-                        </tr>
-                     </table>
-                  </div>
-               </div>
-            </section>   
-         </div>
-
-         <!-- Experience -->
-         <div class="workExp">
-            <div id="exp" role="Experience" class="content-wrap">
-               <h2 class="fade-in">Work Experience</h2>
-               <!-- HHD-Tech -->
+         <!-- Main Section -->
+         <main role="main">
+            <!-- Skills -->
+            <div class="skills" id="skills">
                <section>
-                  <div role="Computer Technician Experience">
-                     <div class="column-narrow slide-in from-left">
-                        <h3>Computer Technician</h3>
-                        <p><em>CSUN HHD Tech Support - Northridge, CA</em></p>
-                        <p> June 2018 - May 2022</p>
+                  <div class="content-wrap">
+                     <h2 class="fade-in">Technical Skills</h2>
+                     <!-- Programming Languages -->
+                     <div class="fade-in">
+                        <h3>Programming Languages</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <table>
+                           <tr>
+                              <td>
+                                 <h4>Java</h4>
+                                 <p>4 years | Apache Maven</p>
+                                 <!-- <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star"></i>
+                                 <i class="fa-solid fa-star-half-stroke"></i> -->
+                              </td>
+                              <td>
+                                 <h4>Swift</h4>
+                                 <p>1 year | Xcode | Storyboards</p>
+                              <td>
+                                 <h4>Bash</h4>
+                                 <p>1 year | Linux</p>
+                              </td>
+                              <td>
+                                 <h4>Dart</h4>
+                                 <p>1 year | Flutter</p>
+                              </td>
+                           </tr>
+                        </table>
                      </div>
-                     <div class="column-wide slide-in from-right">
-                        <p>HHD-Tech is a sub-section of the CSUN IT Department that supports the College of Health and Human Development (“College”), which consists of 326 faculty and staff (“users”).</p>
-                        <ul>
-                           <li>Troubleshooted hardware, network, and software issues for faculty and staff </li>
-                           <li>Diagnosed and resolved a range of technical issues within short time frame during professor lectures</li>
-                           <li>Provided remote support to on and off campus users with Remote Desktop Connection and Bomgar</li>
-                           <li>Configured new computers to University specifications using Microsoft Deployment Tool</li>
-                           <li>Managed the College’s hardware device inventory database using Asset Panda </li>
-                           <li>Generated and summarized inventory reports to identify hardware devices in need of replacement</li>
-                           <li>Onboard, trained, and developed new HHD-Tech computer technician members</li>
-                           <li>Maintained drivers and software for 108 computers across three HHD-Tech computer labs</li>
-                           <li>Binded computers to the CSUN Domain using CSUN’s Active Directory </li>
-                           <li>Migrated the College’s server data from a local server to Microsoft OneDrive</li>
-                        </ul>
+                     <!-- Web Development -->
+                     <div class="fade-in">
+                        <h3>Web Development</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <table>
+                           <tr>
+                              <td>
+                                 <h4>HTML</h4>
+                                 <p>1 year | BootStrap </p>
+                              </td>
+                              <td>
+                                 <h4>CSS</h4>
+                                 <p>1 year</p>
+                              <td>
+                                 <h4>JavaScript</h4>
+                                 <p>1 year | Phaser.js</p>
+                              </td>
+                              <td>
+                                 <h4>PSD</h4>
+                              </td>
+                           </tr>
+                        </table>
                      </div>
-                  </div>
-               </section>
-               <!-- BGC --->
-               <section>
-                  <div role="Mathematics Tutor">
-                     <div class="column-narrow slide-in from-left">
-                        <h3>Mathematics Tutor</h3>
-                        <p><em>Boys & Girls Club of the West Valley - Canoga Park, CA</em></p>
-                        <p>January 2018 - June 2018</p>
-                     </div>
-                     <div class="column-wide slide-in from-right">
-                        <p>BGC is a nonprofit educational organization devoted to helping kids and teens of the local community.</p>
-                        <ul>
-                           <li>Clarified Algebra and geometry mathematical subjects to students struggling in school courses</li>
-                           <li>Organized college application workshops to help students navigate the application process</li>
-                           <li>Supervised the afterschool program, overseeing questions from approximately 30 students</li>
-                        </ul>
+                     <!-- Other -->
+                     <div class="fade-in">
+                        <h3>Other</h3>
+                        <table>
+                           <tr>
+                              <td>Amazon Web Services (AWS)</td>
+                              <td>JSON API</td>
+                              <td>MySQL</td>
+                              <td>LAMP Stack</td>
+                           </tr>
+                        </table>
                      </div>
                   </div>
                </section>
             </div>
-         </div>
 
-         <!-- Projects -->
-         <div class="projects">
-            <div id="proj" role="Projects" class="content-wrap">
-               <h2>Projects</h2>
-               <!-- Personal Website -->
+            <!-- Education -->
+            <div class="edu">
                <section>
-                  <div class="fade-in" id="website">
-                     <div role="Website">
+                  <div id="edu" role="Education" class="content-wrap" style="padding-bottom: 0px;">
+                     <h2 class="fade-in">Education</h2>
+                     <div class="fade-in">
+                        <img src="../assets/images/CSUNS.svg.png" width="110px" class="float-left">
+                        <h3 style="margin-bottom: 0;">&nbsp California State University, Northridge</h3>
+                        <p class="float-left" style="padding-left: 7px;">&nbsp Bachelor of Science - Computer Science</p>
+                        <p class="float-right"><em>May 2022</em></p>
+                     </div>
+                  </div>
+               </section>
+               <section>
+                  <!-- Related Courses -->
+                  <div class="content-wrap related-courses">
+                     <h3 class="fade-in">Related Courses</h3>
+                     <div class="fade-in">
+                        <table>
+                           <tr>
+                              <td>Algorithm Design and Analysis</td>
+                              <td>Swift 5: Protocol Oriented Programming</td>
+                              <td>Swift: Delegations and Data Sources</td>
+                           </tr>
+                           <tr>
+                              <td>Languages and Computation</td>
+                              <td>Programming Language Concepts</td>
+                              <td>Senior Design</td>
+                           </tr>
+                           <tr>
+                              <td>Computer System Security</td>
+                              <td>Data Structures and Program Design</td>
+                              <td>Network Infrastructure</td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </section>   
+            </div>
+
+            <!-- Experience -->
+            <div class="workExp">
+               <div id="exp" role="Experience" class="content-wrap">
+                  <h2 class="fade-in">Work Experience</h2>
+                  <!-- HHD-Tech -->
+                  <section>
+                     <div role="Computer Technician Experience">
                         <div class="column-narrow slide-in from-left">
-                           <h3 class="">Personal Website</h3>
-                           <p>August 2022 - Present</p>
-                           <p><a href="https://github.com/enp0s10/enp0s10.github.io" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
-                           <p><a href="https://enp0s10.github.io" target="_blank"><i class="fas fa-code"></i></i>Website</a></p>
+                           <h3>Computer Technician</h3>
+                           <p><em>CSUN HHD Tech Support - Northridge, CA</em></p>
+                           <p> June 2018 - May 2022</p>
                         </div>
                         <div class="column-wide slide-in from-right">
-                           <p>
-                              A personal website that contains general information on myself and includes a Demo where I showcase tools
-                              I’ve worked with in web development.
-                           </p>
-                           <p><em style="padding-right: 100px;">Language: HTML, CSS, JavaScript</em></p>
+                           <p>HHD-Tech is a sub-section of the CSUN IT Department that supports the College of Health and Human Development (“College”), which consists of 326 faculty and staff (“users”).</p>
                            <ul>
-                              <li>Wrote in HTML and CSS to create an easy-to-read landing page and demo pages</li>
-                              <li>Converted photoshop PSD web templates into a usable web page</li>
+                              <li>Troubleshooted hardware, network, and software issues for faculty and staff </li>
+                              <li>Diagnosed and resolved a range of technical issues within short time frame during professor lectures</li>
+                              <li>Provided remote support to on and off campus users with Remote Desktop Connection and Bomgar</li>
+                              <li>Configured new computers to University specifications using Microsoft Deployment Tool</li>
+                              <li>Managed the College’s hardware device inventory database using Asset Panda </li>
+                              <li>Generated and summarized inventory reports to identify hardware devices in need of replacement</li>
+                              <li>Onboard, trained, and developed new HHD-Tech computer technician members</li>
+                              <li>Maintained drivers and software for 108 computers across three HHD-Tech computer labs</li>
+                              <li>Binded computers to the CSUN Domain using CSUN’s Active Directory </li>
+                              <li>Migrated the College’s server data from a local server to Microsoft OneDrive</li>
                            </ul>
                         </div>
                      </div>
-                  </div>
-               </section>
-               <!-- WAC -->
-               <section>
-                  <div role="WAC">
-                     <div class="column-narrow slide-in from-left">
-                        <h3 class="">WAC</h3>
-                        <p>January 2022 - May 2022</p>
-                        <p class="">
-                        <a href="https://github.com/csun-comp430-s22/WAC" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
+                  </section>
+                  <!-- BGC --->
+                  <section>
+                     <div role="Mathematics Tutor">
+                        <div class="column-narrow slide-in from-left">
+                           <h3>Mathematics Tutor</h3>
+                           <p><em>Boys & Girls Club of the West Valley - Canoga Park, CA</em></p>
+                           <p>January 2018 - June 2018</p>
+                        </div>
+                        <div class="column-wide slide-in from-right">
+                           <p>BGC is a nonprofit educational organization devoted to helping kids and teens of the local community.</p>
+                           <ul>
+                              <li>Clarified Algebra and geometry mathematical subjects to students struggling in school courses</li>
+                              <li>Organized college application workshops to help students navigate the application process</li>
+                              <li>Supervised the afterschool program, overseeing questions from approximately 30 students</li>
+                           </ul>
+                        </div>
                      </div>
-                     <div class="column-wide slide-in from-right">
-                        <p>
-                           A compiler that converts a made-up Java-like language (WAC) into C code. The language includes class-based
-                           inheritance, subtyping, and method overloading.
-                        </p>
-                        <p><em style="padding-right: 100px;">Language: Java</em><em>Tools: Apache Maven</em></p>
-                        <ul>
-                           <li>Contributed to the development of the WAC language syntax</li>
-                           <li>Wrote and Tested code using the Apache Maven tool to maximize code and branch coverage</li>
-                           <li>Worked with my group in creating portions of the Lexer, Parser, and Typechecker</li>
-                           <li>Conducted weekly meetings to merge and assist team members with their code</li>
-                        </ul>
-                     </div>
-                  </div>
-               </section>
-               <!-- TastEZ -->
-               <section>
-                  <div role="TastEZ">
-                     <div class="column-narrow slide-in from-left">
-                        <h3 class="">TastEZ</h3> 
-                        <p>August 2020 - May 2021</p>
-                        <p class="">
-                        <a href="https://github.com/GreenNovaStar/TastEZ" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
-                        <a href="https://youtu.be/bgs3sreKEBQ" target="_blank"><i class="fa-brands fa-youtube"></i></i>Video Demo</a></p>
-                     </div>
-                     <div class="column-wide slide-in from-right">
-                        <p>
-                           A mobile recipe application that incorporates wine pairing to elevate the user’s cooking experience.
-                        </p>
-                        <p><em style="padding-right: 100px;">Language: Dart</em><em>Framework: Flutter</em></p>
-                        <ul>
-                           <li>Designed the UI/UX of the project to begin the development process</li>
-                           <li>Contributed to the front-end design and development of the recipe page</li>
-                           <li>Created user friendly tutorials to assist in navigating and understanding application functionality</li>
-                           <li>Developed the recipe search functionality and filter options with my team leader</li>
-                           <li>Retrieved and displayed user search results via API calls using a recipe API, Spoonacular</li>
-                        </ul>
-                     </div>
-                  </div>
-               </section>
-               <!-- Illud -->
-               <!-- <section>
-                  <div role="Illud">
-                     <div class="column-narrow">
-                        <h3 class="">Illud</h3> <p class="f">
-                        <a href="https://github.com/Inviro/Illud" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
-                     </div>
-                     <div class="column-wide">
-                        <p>
-                           A Java based text Windows Text Editor, which contained standard text editing functionality.
-                        </p>
-                        <p><em>Language: Java</em></p>
-                        <ul>
-                           <li>Created the GUI for the Dictionary Definitions portion of the project</li>
-                           <li>Utilized a free public dictionary API to retrieve definitions for user highlighted words</li>
-                        </ul>
-                     </div>
-                  </div>
-               </section> -->
+                  </section>
+               </div>
             </div>
-         </div>
-      </main>
 
-      <!-- Footer -->
-      <footer role="contentInfo" id="contactMe">
-         <div class="contact-info">
-            <h2>Contact Information</h2>
-            <!-- contact info -->
-            <a href="mailto:adrian.hernandz.0@gmail.com"><i class="far fa-envelope"></i>adrian.hernandz.0@gmail.com</a> |
-            <a href="https://enp0s10.github.io/html/home.html" target="_blank"><i class="fas fa-code"></i>Website</a> |
-            <a href="https://www.linkedin.com/in/adrian-hernandez-bba5621b7/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
-            <a href="https://github.com/enp0s10" target="_blank"><i class="fa-brands fa-square-github"></i>enp0s10</a>
-            
-            <!-- standard footer stuff -->
-            <p>
-               <a href="#top"><img src="../assets/images/upArrow.png" alt="HTML" width="40" length="40" class="float-right"></a>
-               <br>This page was created by Adrian Hernandez
-            </p>
-         </a>
-      </footer>
+            <!-- Projects -->
+            <div class="projects">
+               <div id="proj" role="Projects" class="content-wrap">
+                  <h2>Projects</h2>
+                  <!-- Personal Website -->
+                  <section>
+                     <div class="fade-in" id="website">
+                        <div role="Website">
+                           <div class="column-narrow slide-in from-left">
+                              <h3 class="">Personal Website</h3>
+                              <p>August 2022 - Present</p>
+                              <p><a href="https://github.com/enp0s10/enp0s10.github.io" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
+                              <p><a href="https://enp0s10.github.io" target="_blank"><i class="fas fa-code"></i></i>Website</a></p>
+                           </div>
+                           <div class="column-wide slide-in from-right">
+                              <p>
+                                 A personal website that contains general information on myself and includes a Demo where I showcase tools
+                                 I’ve worked with in web development.
+                              </p>
+                              <p><em style="padding-right: 100px;">Language: HTML, CSS, JavaScript</em></p>
+                              <ul>
+                                 <li>Wrote in HTML and CSS to create an easy-to-read landing page and demo pages</li>
+                                 <li>Converted photoshop PSD web templates into a usable web page</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <!-- WAC -->
+                  <section>
+                     <div role="WAC">
+                        <div class="column-narrow slide-in from-left">
+                           <h3 class="">WAC</h3>
+                           <p>January 2022 - May 2022</p>
+                           <p class="">
+                           <a href="https://github.com/csun-comp430-s22/WAC" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
+                        </div>
+                        <div class="column-wide slide-in from-right">
+                           <p>
+                              A compiler that converts a made-up Java-like language (WAC) into C code. The language includes class-based
+                              inheritance, subtyping, and method overloading.
+                           </p>
+                           <p><em style="padding-right: 100px;">Language: Java</em><em>Tools: Apache Maven</em></p>
+                           <ul>
+                              <li>Contributed to the development of the WAC language syntax</li>
+                              <li>Wrote and Tested code using the Apache Maven tool to maximize code and branch coverage</li>
+                              <li>Worked with my group in creating portions of the Lexer, Parser, and Typechecker</li>
+                              <li>Conducted weekly meetings to merge and assist team members with their code</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </section>
+                  <!-- TastEZ -->
+                  <section>
+                     <div role="TastEZ">
+                        <div class="column-narrow slide-in from-left">
+                           <h3 class="">TastEZ</h3> 
+                           <p>August 2020 - May 2021</p>
+                           <p class="">
+                           <a href="https://github.com/GreenNovaStar/TastEZ" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
+                           <a href="https://youtu.be/bgs3sreKEBQ" target="_blank"><i class="fa-brands fa-youtube"></i></i>Video Demo</a></p>
+                        </div>
+                        <div class="column-wide slide-in from-right">
+                           <p>
+                              A mobile recipe application that incorporates wine pairing to elevate the user’s cooking experience.
+                           </p>
+                           <p><em style="padding-right: 100px;">Language: Dart</em><em>Framework: Flutter</em></p>
+                           <ul>
+                              <li>Designed the UI/UX of the project to begin the development process</li>
+                              <li>Contributed to the front-end design and development of the recipe page</li>
+                              <li>Created user friendly tutorials to assist in navigating and understanding application functionality</li>
+                              <li>Developed the recipe search functionality and filter options with my team leader</li>
+                              <li>Retrieved and displayed user search results via API calls using a recipe API, Spoonacular</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </section>
+                  <!-- Illud -->
+                  <!-- <section>
+                     <div role="Illud">
+                        <div class="column-narrow">
+                           <h3 class="">Illud</h3> <p class="f">
+                           <a href="https://github.com/Inviro/Illud" target="_blank"><i class="fa-solid fa-code-branch"></i>Github</a></p>
+                        </div>
+                        <div class="column-wide">
+                           <p>
+                              A Java based text Windows Text Editor, which contained standard text editing functionality.
+                           </p>
+                           <p><em>Language: Java</em></p>
+                           <ul>
+                              <li>Created the GUI for the Dictionary Definitions portion of the project</li>
+                              <li>Utilized a free public dictionary API to retrieve definitions for user highlighted words</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </section> -->
+               </div>
+            </div>
+         </main>
 
+         <!-- Footer -->
+         <footer role="contentInfo" id="contactMe">
+            <div class="contact-info">
+               <h2>Contact Information</h2>
+               <!-- contact info -->
+               <a href="mailto:adrian.hernandz.0@gmail.com"><i class="far fa-envelope"></i>adrian.hernandz.0@gmail.com</a> |
+               <a href="https://enp0s10.github.io/html/home.html" target="_blank"><i class="fas fa-code"></i>Website</a> |
+               <a href="https://www.linkedin.com/in/hdz-adrian/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a> |
+               <a href="https://github.com/enp0s10" target="_blank"><i class="fa-brands fa-square-github"></i>enp0s10</a>
+               
+               <!-- standard footer stuff -->
+               <p>
+                  <a href="#top"><img src="../assets/images/upArrow.png" alt="HTML" width="40" length="40" class="float-right"></a>
+                  <br>This page was created by Adrian Hernandez
+               </p>
+            </a>
+         </footer>
+
+      </div>
       <!-- JavaScript Imports -->
       <script type="text/javascript" src="../javascript/animationScript.js"></script>
+      <script type="text/javascript" src="../javascript/sideNavScript.js"></script>
    </body>
 
 </html>
