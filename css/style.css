@@ -5,6 +5,8 @@
   --color3: #C2E0F2;	/* projects skills */
   --color4: #499EBF;	/* work */
   --color5: #E09F86;	/* edu */
+  --sideNav1: #474D59;
+  --sideNav2: #99A4BF;
 }
 
 
@@ -68,6 +70,10 @@ main {
 	transform: translateX(50%);
 }
 
+.page-content {
+	transition: margin-left .5s;
+}
+
 /*----- Font Stuff-----*/
 h1 {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -100,7 +106,23 @@ p {
 }
 
 /*------ Header -----*/
-/* Navigation Bar */
+/*-- Header Fonts --*/
+header h1 {
+	margin: 0 0 10px 0;
+}
+header h2 {
+	font-size: 28px;
+	margin: 0 0 10px 0;
+}
+header h3 {
+	margin: 0;
+	font-size: 25px;
+}
+header a i {
+	padding-right: 5px;
+}
+
+/*--- Navigation Bar ---*/
 .top-navbar {
 	/*background-color: var(--color2);*/
 	overflow:  hidden;
@@ -110,7 +132,7 @@ p {
 	width: 100%;
 	box-shadow: 0px 3px 2px slategrey;
 	z-index: 2;
-	transition: background 250ms ease-in;
+	transition: background 250ms ease-in, box-shadow 250ms ease-in;
 }
 
 .top-navbar a {
@@ -120,6 +142,7 @@ p {
 	padding: 25px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	transition: 0.5s;
 }
 
 .top-navbar a:hover {
@@ -131,45 +154,67 @@ p {
 	background-color: var(--color1);
 	color: white;
 }
-
 .nav-scrolled {
 	background: var(--color2);
 	box-shadow: 0px 3px 3px #4DA2D6;
 }
-
-.profile-img {
-    border-radius: 50%;
+.nav-scrolled a {
+	color: white;
+}
+.top-navbar .open-nav {
+	padding: 25px 25px;
 }
 
-header h1 {
-	margin: 0 0 10px 0;
+/*--- Side Bar Menu ---*/
+.side-nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: var(--sideNav1);
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+.side-nav a {
+ 	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+  	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+.side-nav a:hover {
+ 	color: var(--sideNav2);
+}
+.side-nav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+	.side-nav {padding-top: 15px;}
+	.side-nav a {font-size: 18px;}
 }
 
-header h2 {
-	font-size: 28px;
-	margin: 0 0 10px 0;
-}
-
-header h3 {
-	margin: 0;
-	font-size: 25px;
-}
-
-header a i {
-	padding-right: 5px;
-}
-
+/*--- Intro Stuff ---*/
 .intro {
 
 }
-
+.profile-img {
+    border-radius: 50%;
+}
 .image-left {
 	width: 30%;
 	float: left;
 	padding-right: 3%;
 	min-height: 175px
 }
-
 .title-right {
 	width: 70%;
 	float: left;

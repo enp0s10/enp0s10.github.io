@@ -17,37 +17,50 @@
 </head>
 
 <body>
-	<!-- Header -->
-	<header>
-		<nav role="navigation">
-	      <div class="top-navbar">
-	      	<a href="../html/demo.html">API</a>
-	      	<a href="../html/psdToHTML.html">PSD to HTML</a>
-	         <a href="../html/home.html" style="float: right;">Home</a>
-	         <a href="../html/demo.html" class="active" style="float: right;">Demo</a>
-	      </div>
-      </nav>
-      <div class="content-wrap" style="padding-top: 80px">
-	      <h1>Demo Page</h1>
-	      <p>&nbsp; Welcome to the Demo page!<br>
-	      	Here I will be actively adding content to my page. This content will consist of tools and skills I have learned throughout my time at school and personal practice.
-	      </p>
-	   </div>
-	</header>
+	<!-- Sliding Side Bar -->
+      <div id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../html/home.html">Home</a>
+        <a href="../html/demo.html">Demo</a>
+        <a href="../assets/files/AdrianHernandez-Resume.pdf">Resume</a>
+        <a href="https://github.com/enp0s10/enp0s10.github.io">GitHub Repository</a>
+      </div>
+	<!-- Visible Page Content -->
+	<div class="page-content" id="page-content">
+		<!-- Header -->	
+		<header>
+			<nav role="navigation">
+		      <div class="top-navbar">
+		      	<a onclick="openNav()" class="open-nav" id="open-nav"><i class="fa-solid fa-bars"></i></a>
+		      	<a href="../html/demo.html">API</a>
+		      	<a href="../html/psdToHTML.html">PSD to HTML</a>
+		      </div>
+	      </nav>
+	      <div class="content-wrap" style="padding-top: 80px">
+		      <h1>Demo Page</h1>
+		      <p>&nbsp; Welcome to the Demo page!<br>
+		      	Here I will be actively adding content to my page. This content will consist of tools and skills I have learned throughout my time at school and personal practice.
+		      </p>
+		   </div>
+		</header>
 
-	<!-- Main -->
-	<main style="padding-top: 55px">
-		<div class="external-chart">
-			<!-- <div class="content-wrap">
-				<section>
-					<h2>External APIs & Libraries</h2>
-					<p>In this section I will be working with an external API to gather my data. And graph it using Chart.js.</p>
-					<canvas id="chart" class="chart"></canvas>
-					<script type="text/javascript" src="../javascript/script.js"></script>
-				</section>
-			</div> -->
-		</div>
-	</main>
+		<!-- Main -->
+		<main style="padding-top: 55px">
+			<div class="external-chart">
+				<!-- <div class="content-wrap">
+					<section>
+						<h2>External APIs & Libraries</h2>
+						<p>In this section I will be working with an external API to gather my data. And graph it using Chart.js.</p>
+						<canvas id="chart" class="chart"></canvas>
+						<script type="text/javascript" src="../javascript/script.js"></script>
+					</section>
+				</div> -->
+			</div>
+		</main>
+	</div>
+	<!-- JavaScript Imports -->
+      <script type="text/javascript" src="../javascript/animationScript.js"></script>
+      <script type="text/javascript" src="../javascript/sideNavScript.js"></script>
 </body>
 
 </html>
