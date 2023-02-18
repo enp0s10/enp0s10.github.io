@@ -1,12 +1,17 @@
 /*----- Universal Colors -----*/
 :root{
-  --color1: #5C6373;	/* footer header */
-  --color2: #4590BF;	/* Nav Bar */
-  --color3: #C2E0F2;	/* projects skills */
-  --color4: #499EBF;	/* work */
-  --color5: #E09F86;	/* edu */
-  --sideNav1: #474D59;
-  --sideNav2: #99A4BF;
+  /* --color1: #5C6373;	footer header */
+  /* --color2: #4590BF;	Nav Bar */
+  /* --color3: #C2E0F2;	projects skills */
+  /* --color4: #499EBF;	work */
+  /* --color5: #E09F86;	edu */
+  --color1: #B4C3A2;	/* footer header */
+  --color2: #2A282B;	/* Nav Bar */
+  --color3: #FFFFFF;	/* projects skills */
+  --color4: #8EB0B1;	/* work */
+  --color5: #736345;	/* edu */
+  --sideNav1: #4f5947;
+  --sideNav2: #a9bf99;
 }
 
 
@@ -59,7 +64,7 @@ main {
 	width: 30%;
 	float: left;
 	padding-right: 3%;
-	min-height: 175px
+	min-height: 175px;
 	transform: transalteX(-50%);
 }
 
@@ -130,7 +135,7 @@ header a i {
 	position: fixed;
 	padding: 0px;
 	width: 100%;
-	box-shadow: 0px 3px 2px slategrey;
+	box-shadow: 0px 3px 2px rgb(212, 240, 194);
 	z-index: 2;
 	transition: background 250ms ease-in, box-shadow 250ms ease-in;
 }
@@ -147,7 +152,7 @@ header a i {
 
 .top-navbar a:hover {
 	background-color: var(--color3);
-	color: black;
+	color: grey;
 }
 
 .top-navbar a.active {
@@ -156,7 +161,7 @@ header a i {
 }
 .nav-scrolled {
 	background: var(--color2);
-	box-shadow: 0px 3px 3px #4DA2D6;
+	box-shadow: 0px 3px 3px #6f6f6f;
 }
 .nav-scrolled a {
 	color: white;
@@ -273,6 +278,7 @@ footer {
 /*-- Education --*/
 .edu {
 	background-color: var(--color5);
+	color: rgb(238, 238, 238);
 }
 .related-courses {
 	padding-top: 0;
@@ -301,8 +307,14 @@ footer {
 	margin-bottom: 0;
 }
 .projects a {
+	color: rgb(42, 42, 42);
 	padding: 10px;
 }
+
+.projects a:hover {
+	color: var(--color4);
+}
+
 .projects a i {
     padding-right: 5px;
 }
